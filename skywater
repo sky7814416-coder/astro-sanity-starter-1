@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Product  - Innovative Advertising Through Free & Personalized Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-20px); } }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <svg width="40" height="40" viewBox="0 0 40 40" class="mr-3">
+                        <circle cx="20" cy="20" r="18" fill="#8B5CF6" stroke="#7C3AED" stroke-width="2"/>
+                        <path d="M12 15 L20 10 L28 15 L28 25 L20 30 L12 25 Z" fill="white" opacity="0.9"/>
+                        <circle cx="20" cy="20" r="6" fill="#8B5CF6"/>
+                        <text x="20" y="24" text-anchor="middle" font-size="8" fill="white" font-weight="bold">FP</text>
+                    </svg>
+                    <div class="text-2xl font-bold text-purple-600">Free Product</div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="#about" class="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="#services" class="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
+                        <a href="#comparison" class="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Why Choose Us</a>
+                        <a href="#contact" class="bg-purple-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-purple-700 transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-purple-600">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-purple-600">Home</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-purple-600">About</a>
+                <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-purple-600">Services</a>
+                <a href="#comparison" class="block px-3 py-2 text-gray-700 hover:text-purple-600">Why Choose Us</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-purple-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg pt-20 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                    Put Your Brand in Everyone's Hand!
+                </h1>
+                <p class="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto">
+                    Innovative Advertising Through Free & Personalized Products
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button onclick="scrollToSection('services')" class="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                        Our Services
+                    </button>
+                    <button onclick="scrollToSection('contact')" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition-colors">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Free Product</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    We are a team of Thinkers, Innovators and Brand Experts who help you build your brand better and stand apart from competitors through smart, low-cost marketing solutions.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">What We Do</h3>
+                    <p class="text-gray-600 mb-6">
+                        Free Product is an innovative advertising company that offers free and low-cost promotional products to the public, while helping brands, businesses, and institutions gain high visibility.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 bg-purple-600 rounded-full mr-3"></div>
+                            <span class="text-gray-700">High visibility for advertisers</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 bg-purple-600 rounded-full mr-3"></div>
+                            <span class="text-gray-700">Free utility products for the public</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 bg-purple-600 rounded-full mr-3"></div>
+                            <span class="text-gray-700">Smart, low-cost marketing for clients</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="animate-float">
+<img src="G:\SANDEEP FILE\BUSINESS\WATER COMPANY NEW DATA\FOR NEW WEBSITE\EXTRA/96.jpg" alt="">
+                        
+                            <div class="text-white text-6xl">🎯</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+                <p class="text-lg text-gray-600">We provide branded promotional items like:
+- Packaged Drinking Water Bottles
+- Notebooks
+These products are distributed free of cost to people. We place the brand logo,
+name, message, or QR code of our clients directly on the label of these products,
+ensuring direct exposure in homes, events, schools, and public spaces.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Water Bottles -->
+                <div class="bg-white rounded-xl p-6 shadow-lg card-hover">
+                    <div class="mb-6 flex justify-center">
+                        <svg width="80" height="120" viewBox="0 0 80 120" class="drop-shadow-lg">
+<img src="G:\SANDEEP FILE\BUSINESS\WATER COMPANY NEW DATA\FOR NEW WEBSITE\EXTRA/126.jpg" alt="">
+                            <!-- Bottle Body -->
+                            <rect x="20" y="30" width="40" height="80" rx="8" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+                            <!-- Bottle Cap -->
+                            <rect x="25" y="20" width="30" height="15" rx="3" fill="#1976D2"/>
+                            <!-- Bottle Neck -->
+                            <rect x="30" y="15" width="20" height="10" fill="#1976D2"/>
+                            <!-- Water -->
+                            <rect x="22" y="32" width="36" height="76" rx="6" fill="#81D4FA"/>
+                            <!-- Label -->
+                            <rect x="25" y="50" width="30" height="20" rx="2" fill="white" stroke="#E0E0E0"/>
+                            <text x="40" y="58" text-anchor="middle" font-size="6" fill="#666"></text>
+                            <text x="40" y="65" text-anchor="middle" font-size="6" fill="#666"></text>
+                            <!-- Bubbles -->
+                            <circle cx="35" cy="40" r="2" fill="#B3E5FC" opacity="0.7"/>
+                            <circle cx="45" cy="45" r="1.5" fill="#B3E5FC" opacity="0.7"/>
+                            <circle cx="38" cy="48" r="1" fill="#B3E5FC" opacity="0.7"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Packaged Drinking Water</h3>
+                    <p class="text-gray-600 mb-4">Custom-labeled water bottles with your brand logo, message, or QR code. Perfect for events, offices, and public distribution.</p>
+                    <div class="text-purple-600 font-semibold"></div>
+                </div>
+
+                <!-- Notebooks -->
+                <div class="bg-white rounded-xl p-6 shadow-lg card-hover">
+                    <div class="mb-6 flex justify-center">
+                        <svg width="120" height="120" viewBox="0 0 80 100" class="drop-shadow-lg">
+<img src="G:\SANDEEP FILE\BUSINESS\WATER COMPANY NEW DATA\FOR NEW WEBSITE\EXTRA/103.jpg" alt="">
+                            <!-- Notebook Cover -->
+                            <rect x="15" y="10" width="50" height="70" rx="3" fill="#8E24AA" stroke="#6A1B9A" stroke-width="2"/>
+                            <!-- Spiral Binding -->
+                            <rect x="10" y="15" width="8" height="60" fill="#424242"/>
+                            <circle cx="14" cy="20" r="1.5" fill="white"/>
+                            <circle cx="14" cy="28" r="1.5" fill="white"/>
+                            <circle cx="14" cy="36" r="1.5" fill="white"/>
+                            <circle cx="14" cy="44" r="1.5" fill="white"/>
+                            <circle cx="14" cy="52" r="1.5" fill="white"/>
+                            <circle cx="14" cy="60" r="1.5" fill="white"/>
+                            <circle cx="14" cy="68" r="1.5" fill="white"/>
+                            <!-- Brand Area -->
+                            <rect x="20" y="25" width="40" height="15" rx="2" fill="white" opacity="0.9"/>
+                            <text x="40" y="33" text-anchor="middle" font-size="8" fill="#8E24AA" font-weight=></text>
+                            <text x="40" y="42" text-anchor="middle" font-size="6" fill="#8E24AA"></text>
+                            <!-- Decorative Lines -->
+                            <line x1="20" y1="50" x2="60" y2="50" stroke="white" stroke-width="1" opacity="0.7"/>
+                            <line x1="20" y1="55" x2="60" y2="55" stroke="white" stroke-width="1" opacity="0.7"/>
+                            <line x1="20" y1="60" x2="60" y2="60" stroke="white" stroke-width="1" opacity="0.7"/>
+                            <!-- Pages -->
+                            <rect x="16" y="11" width="48" height="68" rx="2" fill="white" opacity="0.3"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3"> Notebooks</h3>
+                    <p class="text-gray-600 mb-4">High-quality notebooks with your brand prominently displayed. Long-lasting advertising that stays with users for months.</p>
+                    <div class="text-purple-600 font-semibold"></div>
+                </div>
+
+                <!-- Wedding Bottles -->
+                <div class="bg-white rounded-xl p-6 shadow-lg card-hover">
+                    <div class="mb-6 flex justify-center">
+                        <svg width="80" height="120" viewBox="0 0 80 120" class="drop-shadow-lg">
+<img src="G:\SANDEEP FILE\BUSINESS\WATER COMPANY NEW DATA\FOR NEW WEBSITE\EXTRA/125.jpg" alt="">
+                            <!-- Bottle Body -->
+                            <rect x="20" y="30" width="40" height="80" rx="8" fill="#FFF3E0" stroke="#FF8F00" stroke-width="2"/>
+                            <!-- Bottle Cap -->
+                            <rect x="25" y="20" width="30" height="15" rx="3" fill="#FF8F00"/>
+                            <!-- Bottle Neck -->
+                            <rect x="30" y="15" width="20" height="10" fill="#FF8F00"/>
+                            <!-- Water -->
+                            <rect x="22" y="32" width="36" height="76" rx="6" fill="#FFE0B2"/>
+                            <!-- Wedding Label -->
+                            <rect x="23" y="45" width="34" height="35" rx="3" fill="white" stroke="#FFB74D"/>
+                            <!-- Heart decoration -->
+                            <path d="M40 50 C38 48, 35 48, 35 52 C35 48, 32 48, 30 50 C30 52, 35 57, 40 60 C45 57, 50 52, 50 50 C48 48, 45 48, 45 52 C45 48, 42 48, 40 50 Z" fill="#E91E63"/>
+                            <!-- Names placeholder -->
+                            <text x="40" y="65" text-anchor="middle" font-size="5" fill="#FF8F00" font-weight="bold"></text>
+                            <text x="40" y="72" text-anchor="middle" font-size="4" fill="#FF8F00"></text>
+                            <!-- Decorative border -->
+                            <rect x="24" y="46" width="32" height="33" rx="2" fill="none" stroke="#FFD54F" stroke-width="1" stroke-dasharray="2,1"/>
+                            <!-- Bubbles -->
+                            <circle cx="35" cy="38" r="1.5" fill="#FFCC02" opacity="0.6"/>
+                            <circle cx="45" cy="42" r="1" fill="#FFCC02" opacity="0.6"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Wedding Special Bottles</h3>
+                    <p class="text-gray-600 mb-4">Premium custom-labeled water bottles with bride & groom photos, names, and wedding date. Elegant packaging included.</p>
+                    <div class="text-purple-600 font-semibold"></div>
+                </div>
+            </div>
+
+            <!-- Product Gallery -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Our Product Gallery</h3>
+                
+                <!-- Water Bottles And NoteBooks Gallery -->
+                <div class="mb-12">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-6 text-center">Custom Water Bottles</h4>
+
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                <!-- Water Bottles -->
+
+                         
+<img src="G:\SANDEEP FILE\BUSINESS\WATER COMPANY NEW DATA\FOR NEW WEBSITE\EXTRA/999.jpg" alt="">
+<img src="G:\SANDEEP FILE\BUSINESS\WATER COMPANY NEW DATA\FOR NEW WEBSITE\EXTRA/888.jpg" alt="">
+<img src="G:\SANDEEP FILE\BUSINESS\WATER COMPANY NEW DATA\FOR NEW WEBSITE\EXTRA/777.jpg" alt="">
+<img src="G:\SANDEEP FILE\BUSINESS\WATER COMPANY NEW DATA\FOR NEW WEBSITE\EXTRA/666.jpg" alt="">
+<img src="G:\SANDEEP FILE\BUSINESS\WATER COMPANY NEW DATA\FOR NEW WEBSITE\EXTRA/555.jpg" alt="">
+<img src="G:\SANDEEP FILE\BUSINESS\WATER COMPANY NEW DATA\FOR NEW WEBSITE\EXTRA/444.jpg" alt="">
+<img src="G:\SANDEEP FILE\BUSINESS\WATER COMPANY NEW DATA\FOR NEW WEBSITE\EXTRA/333.jpg" alt=""> 
+<img src="G:\SANDEEP FILE\BUSINESS\WATER COMPANY NEW DATA\FOR NEW WEBSITE\EXTRA/221.jpg" alt="">                       
+<img src="G:\SANDEEP FILE\BUSINESS\WATER COMPANY NEW DATA\FOR NEW WEBSITE\EXTRA/107.jpg" alt="">
+<img src="G:\SANDEEP FILE\BUSINESS\WATER COMPANY NEW DATA\FOR NEW WEBSITE\EXTRA/106.jpg" alt="">   
+<img src="G:\SANDEEP FILE\BUSINESS\WATER COMPANY NEW DATA\FOR NEW WEBSITE\EXTRA/105.jpg" alt="">  
+<img src="G:\SANDEEP FILE\BUSINESS\WATER COMPANY NEW DATA\FOR NEW WEBSITE\EXTRA/104.jpg" alt=""> 
+<img src="G:\SANDEEP FILE\BUSINESS\WATER COMPANY NEW DATA\FOR NEW WEBSITE\EXTRA/103.jpg" alt=""> 
+<img src="G:\SANDEEP FILE\BUSINESS\WATER COMPANY NEW DATA\FOR NEW WEBSITE\EXTRA/102.jpg" alt=""> 
+<img src="G:\SANDEEP FILE\BUSINESS\WATER COMPANY NEW DATA\FOR NEW WEBSITE\EXTRA/98.jpg" alt=""> 
+                                 
+                            </svg>
+                            <p class="text-xs text-center mt-2 text-gray-600"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Who We Work With</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="text-center p-4">
+                        <div class="text-3xl mb-2">🏢</div>
+                        <h4 class="font-semibold text-gray-900">Brands & Businesses</h4>
+                        <p class="text-sm text-gray-600">Product promotions and shop visibility</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="text-3xl mb-2">🎓</div>
+                        <h4 class="font-semibold text-gray-900">Educational Institutions</h4>
+                        <p class="text-sm text-gray-600">Admissions, courses, and event awareness</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="text-3xl mb-2">🏪</div>
+                        <h4 class="font-semibold text-gray-900">Retailers</h4>
+                        <p class="text-sm text-gray-600">Local marketing solutions</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="text-3xl mb-2">💑</div>
+                        <h4 class="font-semibold text-gray-900">Wedding Planners</h4>
+                        <p class="text-sm text-gray-600">Personalized wedding bottles</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section id="comparison" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Free Product?</h2>
+                <p class="text-lg text-gray-600">Compare our advertising effectiveness with traditional media</p>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full bg-white rounded-lg shadow-lg overflow-hidden">
+                    <thead class="bg-purple-600 text-white">
+                        <tr>
+                            <th class="px-6 py-4 text-left">Media</th>
+                            <th class="px-6 py-4 text-left">Viewership</th>
+                            <th class="px-6 py-4 text-left">Life</th>
+                            <th class="px-6 py-4 text-left">Recall</th>
+                            <th class="px-6 py-4 text-left">Competition</th>
+                            <th class="px-6 py-4 text-left">Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-medium">TV</td>
+                            <td class="px-6 py-4">Not Fixed</td>
+                            <td class="px-6 py-4">30 Seconds</td>
+                            <td class="px-6 py-4">As per Cost</td>
+                            <td class="px-6 py-4">300 Channels</td>
+                            <td class="px-6 py-4">₹2000/second</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-medium">Newspaper</td>
+                            <td class="px-6 py-4">Random</td>
+                            <td class="px-6 py-4">50 Seconds</td>
+                            <td class="px-6 py-4">10 times a day</td>
+                            <td class="px-6 py-4">Many Stations</td>
+                            <td class="px-6 py-4">₹700/second</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-medium">Outdoor</td>
+                            <td class="px-6 py-4">Random</td>
+                            <td class="px-6 py-4">As per duration</td>
+                            <td class="px-6 py-4">1 Month</td>
+                            <td class="px-6 py-4">Many Hoardings</td>
+                            <td class="px-6 py-4">₹5000/month</td>
+                        </tr>
+                        <tr class="bg-purple-50 hover:bg-purple-100">
+                            <td class="px-6 py-4 font-bold text-purple-600">Free Product (Notebooks)</td>
+                            <td class="px-6 py-4 font-semibold">Continuous</td>
+                            <td class="px-6 py-4 font-semibold">Minimum 1 Year</td>
+                            <td class="px-6 py-4 font-semibold">1 Year</td>
+                            <td class="px-6 py-4 font-semibold">Just One Brand</td>
+                            <td class="px-6 py-4 font-bold text-green-600">Customized Pricing</td>
+                        </tr>
+                        <tr class="bg-purple-50 hover:bg-purple-100">
+                            <td class="px-6 py-4 font-bold text-purple-600">Free Product (Water)</td>
+                            <td class="px-6 py-4 font-semibold">Continuous</td>
+                            <td class="px-6 py-4 font-semibold">1 day to 1 week</td>
+                            <td class="px-6 py-4 font-semibold">1 day to 1 week</td>
+                            <td class="px-6 py-4 font-semibold">Just One Brand</td>
+                            <td class="px-6 py-4 font-bold text-green-600">Customized Pricing</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="mt-8 text-center">
+                <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg inline-block">
+                    <strong>Result:</strong> Up to 95% cost savings with better brand recall and zero competition!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 gradient-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Get Started Today</h2>
+                <p class="text-lg text-white">Ready to put your brand in every hand? Contact us now!</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-white">
+                    <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="text-2xl mr-4">👤</div>
+                            <div>
+                                <div class="font-semibold">Owner</div>
+                                <div>Sandeep Yadav</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="text-2xl mr-4">📱</div>
+                            <div>
+                                <div class="font-semibold">Mobile</div>
+                                <a href="tel:7814416059" class="hover:underline">7814416059</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="text-2xl mr-4">📧</div>
+                            <div>
+                                <div class="font-semibold">Email</div>
+                                <a href="mailto:freeproduct1111@gmail.com" class="hover:underline">freeproduct1111@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="text-2xl mr-4">📍</div>
+                            <div>
+                                <div class="font-semibold">Address</div>
+                                <div>Industrial Area Phase-II</div>
+                                <div>Chandigarh, Pin Code (160002)</div>
+                                <div>India</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="text-2xl mr-4">🏢</div>
+                            <div>
+                                <div class="font-semibold">Company</div>
+                                <div>Free Product</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h3>
+                    <form class="space-y-4" onsubmit="handleFormSubmit(event)">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                            <input type="text" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Phone</label>
+                            <input type="tel" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Service Interested In</label>
+                            <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                                <option>Water Bottles</option>
+                                <option>Notebooks</option>
+                                <option>Wedding Special Bottles</option>
+                                <option>Custom Requirements</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex items-center justify-center mb-4">
+                    <svg width="32" height="32" viewBox="0 0 40 40" class="mr-2">
+                        <circle cx="20" cy="20" r="18" fill="#8B5CF6" stroke="#7C3AED" stroke-width="2"/>
+                        <path d="M12 15 L20 10 L28 15 L28 25 L20 30 L12 25 Z" fill="white" opacity="0.9"/>
+                        <circle cx="20" cy="20" r="6" fill="#8B5CF6"/>
+                        <text x="20" y="24" text-anchor="middle" font-size="8" fill="white" font-weight="bold">FP</text>
+                    </svg>
+                    <div class="text-2xl font-bold">Free Product</div>
+                </div>
+                <p class="text-gray-400 mb-4">Put Your Brand in Every Hand</p>
+                <p class="text-sm text-gray-500">© 2024 Free Product. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling function
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Handle form submission
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            alert('Thank you for your message! We will contact you soon at the provided details.');
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Close mobile menu when clicking on links
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97175402305a91ec',t:'MTc1NTU4MjE1Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
